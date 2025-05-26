@@ -16,33 +16,7 @@ Klone das Repository auf den Pi und installiere alle Abhängigkeiten.
 
 ---
 
-### 🛠️ Installation
-
-1. **Repository klonen**:
-
-   ```bash
-   git clone https://github.com/sKYwALK3R7/tomoplex-bendingmachine.git
-   cd tomoplex-bendingmachine
-   ```
-
-2. **Python-Abhängigkeiten installieren**:
-   Stelle sicher, dass Python 3 installiert ist. Installiere dann die benötigten Pakete:
-
-   ```bash
-   pip install pyserial
-   ```
-
-3. **Arduino-Code flashen**:
-
-   > ⚠️ Der Arduino-Sketch muss **über einen Laptop mit der Arduino IDE** auf den Arduino geflasht werden (nicht über den Raspberry Pi).
-
-   * Öffne `arduino_motor_controller.ino` mit der Arduino-IDE.
-   * Wähle das passende Board (z. B. Arduino Uno) und den richtigen Port.
-   * Klicke auf **Hochladen**, um den Sketch zu übertragen.
-
----
-
-### 📡 Verwendung mit Raspberry Pi als Access Point
+### 🛠️📡 Installation und Verwendung mit Raspberry Pi als Access Point 
 
 Das System ist für die Ausführung auf einem **Raspberry Pi eingerichtet**, der als **Standalone Access Point** konfiguriert wurde. Um den Code dort auszuführen, gehe wie folgt vor:
 
@@ -53,7 +27,7 @@ Das System ist für die Ausführung auf einem **Raspberry Pi eingerichtet**, der
 
 2. **Anmelden**:
 
-   * Melde dich an einem der eingerichteten Benutzerkonten auf dem Pi an (lokal oder via SSH, sofern aktiviert).
+   * Melde dich an einem der eingerichteten Benutzerkonten auf dem Pi an via SSH.
 
 3. **Einmalige Verbindung mit LAN**:
 
@@ -71,8 +45,15 @@ Das System ist für die Ausführung auf einem **Raspberry Pi eingerichtet**, der
    * Nach der Installation kann das LAN-Kabel entfernt werden.
    * Die weitere Nutzung erfolgt über das WLAN-Netzwerk des Raspberry Pi.
 
----
+5. **Arduino-Code flashen**:
 
+   > ⚠️ Der Arduino-Sketch muss **über einen Laptop mit der Arduino IDE** auf den Arduino geflasht werden (bisher noch nicht über den Raspberry Pi möglich).
+
+   * Öffne `arduino_motor_controller.ino` mit der Arduino-IDE.
+   * Wähle das passende Board und den richtigen Port.
+   * Klicke auf **Hochladen**, um den Sketch zu übertragen.
+
+---
 ### 🚀 Nutzung
 
 1. **Hardware anschließen**
@@ -103,16 +84,8 @@ tomoplex-bendingmachine/
 
 ---
 
-### 📄 Lizenz
-
-Dieses Projekt steht unter der [MIT-Lizenz](LICENSE). Du darfst es frei verwenden, modifizieren und verbreiten.
-
----
-
 ### 🤝 Mitwirkende
 
 * [sKYwALK3R7](https://github.com/sKYwALK3R7)
 
 ---
-
-Wenn du möchtest, kann ich dir auch ein minimalistisches Web-Dashboard zur Visualisierung der Messdaten entwerfen. Sag einfach Bescheid!
